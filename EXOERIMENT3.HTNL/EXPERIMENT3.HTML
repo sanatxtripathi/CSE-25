@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #dcdcdc;
+      margin: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: "Times New Roman", serif;
+      margin-bottom: 10px;
+    }
+
+    form {
+      width: 450px;
+      margin: 0 auto;
+      border: 1px solid #000;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-bottom: 8px;
+      vertical-align: top;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 250px;
+      padding: 4px;
+      margin-bottom: 10px;
+      border: 1px solid #000000;
+    }
+
+    textarea {
+      height: 50px;
+      resize: none;
+    }
+
+    /* Fix gender row alignment */
+    .gender-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .gender-row label {
+      width: 120px;
+      margin: 0;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .gender-options label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin: 0;
+    }
+
+    .buttons {
+      text-align: left;
+      margin-left: 125px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 5px 12px;
+      margin-right: 10px;
+      border: 1px solid #d6bcbc;
+      background-color: #f2f2f2;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e6e6e6;
+    }
+
+    hr {
+      margin: 15px auto;
+      width: 90%;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">Student Registration Form</h1>
+  <hr />
+
+  <form method="post" action="submit_form.php">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter valid email address" required /><br />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required /><br />
+
+  
+    <div class="gender-row">
+      <label>Gender:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Male" required />
+          Male</label>
+        <label><input type="radio" name="gender" value="Female"  /> Female</label>
+        
+      </div>
+    </div>
+
+    <label for="course">Course:</label>
+    <select id="course" name="course" required>
+      <option value="">-- Select Course --</option>
+      <option value="B.Tech">B.Tech-CSE</option>
+      <option value="B.Tech">B.Tech-CSE(AI&ML)</option>
+      <option value="B.Tech">B.Tech-CSE-DS</option>
+      <option value="BCA">BCA</option>
+      <option value="MCA">MCA</option>
+      <option value="MBA">MBA</option>
+    </select><br />
+
+    <label for="contact">Contact No:</label>
+    <input type="tel" id="contact" name="contact" placeholder="Enter phone number" required /><br />
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" placeholder="Enter your address" required></textarea><br />
+
+    <div class="buttons">
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+    </div>
+  </form>
+
+  <hr />
+  <footer>© 2025-2026 Student Registration Form Portal</footer>
+</body>
+
+</html>
