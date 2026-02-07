@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Timetable - CSE Department</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #fff;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      border: 2px solid #000;
+      /* Outer border */
+    }
+
+    th,
+    td {
+      border: 1px solid #210303;
+      padding: 8px;
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    th {
+      background-color: #fadf4a;
+    }
+
+    .nested-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .nested-table td {
+      border: 1px solid #834747;
+      padding: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>
+      College Timetable - CSE Department
+    </caption>
+    <tr>
+      <th>Day / Time</th>
+      <th>9:00 - 10:00</th>
+      <th>10:00 - 11:00</th>
+      <th>11:00 - 12:00</th>
+      <th>12:00 - 1:00</th>
+      <th>1:00 - 2:00</th>
+      <th>2:00 - 3:00</th>
+      <th>3:00 - 4:00</th>
+    </tr>
+
+    <tr>
+      <td><b>Monday</b></td>
+      <td>Mathematics</td>
+      <td>English</td>
+      <td></td>
+      <td rowspan="5">Break</td>
+      <td colspan="2">DSA Lab</td>
+      <td>Sports</td>
+    </tr>
+
+    <tr>
+      <td><b>Tuesday</b></td>
+      <td>Mathematics</td>
+      <td>C Programming</td>
+      <td></td>
+      <td colspan="2">Electronics Lab</td>
+      <td>Library</td>
+    </tr>
+
+    <tr>
+      <td><b>Wednesday</b></td>
+      <td>Mathematics</td>
+      <td>English</td>
+      <td>Physics</td>
+      <td colspan="2">Computer Networks</td>
+      <td rowspan="3">
+        <b>Lab Details</b><br />
+        <table>
+          <tr>
+            <td><b>Batch A</b></td>
+            <td>Eletronics Lab</td>
+          </tr>
+          <tr>
+            <td><b>Batch B</b></td>
+            <td>DSA Lab</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>Thursday</b></td>
+      <td>Workshop</td>
+      <td>Physics</td>
+      <td></td>
+      <td>Mathematics</td>
+      <td>English</td>
+    </tr>
+
+    <tr>
+      <td><b>Friday</b></td>
+      <td>Computer Networks</td>
+      <td>English</td>
+      <td>Physics</td>
+      <td colspan="2">Project Work</td>
+    </tr>
+  </table>
+</body>
+
+</html>
